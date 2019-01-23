@@ -1,0 +1,33 @@
+﻿@section scripts{
+    <script src="~/Scripts/fruta/index-ajax.js"></script>
+}
+
+<h2 class="text-info text-center mb-3 mt-3">Frutas</h2>
+<button type="button" class="float-right btn btn-primary mb-2" data-toggle="modal" data-target="#modal-cadastro-fruta">
+    Cadastrar Frutas
+</button>
+<table class="table table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th class="coluna-codigo">Codigo</th>
+            <th class="coluna-Idcategoria">categoria</th>
+            <th class="coluna-nome">Nome</th>
+            <th class="coluna-preco">Preço</th>
+            <th class="coluna-peso">Peso</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+    <tbody id="tabela-fruta"></tbody>
+    <tfoot>
+        <tr>
+            <th class="coluna-codigo">Codigo</th>
+            <th class="coluna-Idcategoria">categoria</th>
+            <th class="coluna-nome">Nome</th>
+            <th class="coluna-preco">Preço</th>
+            <th class="coluna-peso">Peso</th>
+            <th>Ação</th>
+        </tr>
+    </tfoot>
+</table>
+@RenderPage("ModalCadastrar.cshtml")
+@RenderPage("ModalEditar.cshtml")

@@ -1,0 +1,13 @@
+﻿@{
+    @Model Models.Categoria categoria = ViewBag.categoria;
+}
+<form method="post" action="/categoria/update">
+    <input type="hidden" name="categoria.Id" value="@categoria.Id" />
+    <div class="form-group">
+        <label for="campo-nome-categoria">Nome da Categoria</label>
+        <input class="form-control" type="text" id="campo-nome-categoria" name="categoria.NomeCategoria" value="@categoria.NomeCategoria" required="required" />
+    </div>
+    <div class="float-right mb-4">
+        <button class="btn btn-success" type="submit" value="salvar">Salvar</button>
+    </div>
+</form>

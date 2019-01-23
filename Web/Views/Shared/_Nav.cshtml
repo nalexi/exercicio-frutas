@@ -1,0 +1,16 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand h1" href="#">Frutas</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item @if (Request.Url.AbsolutePath.Contains("categoria")) { <text>active</text>} ">
+                <a class="nav-link" href="/categoria">Categorias</a>
+            </li>
+            <li class="nav-item @if (Request.Url.AbsolutePath.Contains("fruta")) { <text>active</text>} " ">
+                <a class="nav-link" href="/fruta">Frutas</a>
+            </li>
+        </ul>
+    </div>
+</nav>
